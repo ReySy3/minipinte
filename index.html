@@ -257,7 +257,7 @@
         // Function to fetch images
         async function fetchImages(query = 'nature') {
             try {
-                const response = await fetch(`https://deku-rest-apis.ooguy.com/api/pinterest?q=${query}`);
+                const response = await fetch(`https://api.joshweb.click/api/pinterest?q=${query}`);
                 const data = await response.json();
 
                 console.log("API Response:", JSON.stringify(data, null, 2)); // Log the response for debugging
